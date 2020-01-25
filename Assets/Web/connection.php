@@ -3,13 +3,9 @@
 	// set connection variables
 
 	$servername = "localhost";
-	$username = "id6774921_unity";
-	$password = "unity@999@";
-	$dbname = "id6774921_unity";
-	
-	// $username = "root";
-	// $password = "Gen123@";
-	// $dbname = "shopdb";
+	$username = "id12360443_root";
+	$password = "SeedBlank@456@";
+	$dbname = "id12360443_roadrunner";
 
 	// Create Connection
 
@@ -20,7 +16,6 @@
 	if ($con->connect_error) {
 	    die("0");
 	}	
-
 
 	// Start Session and set session variables
 

@@ -58,13 +58,16 @@
      <Compile Include="Assets\Scripts\acc_mob.cs" />
      <Compile Include="Assets\Scripts\ender.cs" />
      <Compile Include="Assets\Scripts\final_score.cs" />
+     <Compile Include="Assets\Scripts\GyroMotion.cs" />
      <Compile Include="Assets\Scripts\ld.cs" />
-     <Compile Include="Assets\Scripts\Lead.cs" />
      <Compile Include="Assets\Scripts\leaderboard.cs" />
+     <Compile Include="Assets\Scripts\LeaderboardLoad.cs" />
      <Compile Include="Assets\Scripts\level.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\obstacle_mov.cs" />
      <Compile Include="Assets\Scripts\on.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SaveScore.cs" />
      <Compile Include="Assets\Scripts\score.cs" />
      <Compile Include="Assets\Scripts\scorers.cs" />
      <Compile Include="Assets\Scripts\spawn.cs" />

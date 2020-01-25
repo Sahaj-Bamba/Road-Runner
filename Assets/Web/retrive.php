@@ -2,7 +2,7 @@
 
 include 'connection.php';
 
-	$sql = "SELECT * FROM `user` ORDER BY 'score' ";
+	$sql = "SELECT * FROM `user` ORDER BY 'Score' Limit 5 ";
 
 	$result = $con->query($sql);
 
@@ -18,3 +18,4 @@ include 'connection.php';
 
 ?>
 
+ 

@@ -2,7 +2,9 @@
 
 include 'connection.php';
 
-	$sql = "SELECT * FROM `user` ORDER BY 'Score' Limit 5 ";
+	$level = mysqli_real_escape_string($con, $_GET["level"]);
+	
+	$sql = "SELECT * FROM `user` where Level='$level' ORDER BY 'Score' Limit 5 ";
 
 	$result = $con->query($sql);
 

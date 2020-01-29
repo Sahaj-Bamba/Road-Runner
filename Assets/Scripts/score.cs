@@ -10,7 +10,7 @@ public class score : MonoBehaviour {
 	void Update () {
 		
 		if(en_cnt.GetComponent<ender>().game_controller==0){
-			scr.text = (Time.timeSinceLevelLoad*100).ToString("0");
+			scr.text = (int.Parse(scr.text) + (Time.deltaTime*100)).ToString("0") ;
 		}
 	}
 }

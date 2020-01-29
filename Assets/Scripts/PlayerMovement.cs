@@ -1,21 +1,25 @@
 ﻿
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerMovement : MonoBehaviour {
 
 	public Rigidbody rb;
 	public Transform ply;
-	
+	public Text a;
+
 	public float frd_force = 500f;
 	public float side_force = 500f;
 
 	private bool right_move=false;
 	private bool left_move=false;
-	private int cnt=0;
+	private int cnt = 0;
+	private int bonus = 0;
 
 	void Update(){
 		//Debug.Log("Hity");
-		if(Input.GetKey("d")){
+		if(Input.GetKey("d") ){
 			//Debug.Log("d");
 			right_move = true;
 		}
@@ -77,7 +81,13 @@ public class PlayerMovement : MonoBehaviour {
 			//collider.isTrigger = false;
 			cnt++;
 		}
-
+		else if (col.gameObject.tag == "bonus")
+		{
+			bonus++;
+			a.text = (int.Parse(a.text) + bonus * 1000).ToString("0");
+			col.gameObject.GetComponent<Transform>().localScale = new Vector3(0,0,0);
+			Destroy(col.gameObject);
+		}
 	}
 
 }

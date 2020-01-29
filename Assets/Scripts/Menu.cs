@@ -8,7 +8,12 @@ public class Menu : MonoBehaviour {
 	public void StartGame(){
 		SceneManager.LoadScene(4);
 	}
-	
+
+	public void load(string x)
+	{
+		SceneManager.LoadScene(x);
+	}
+
 	public void LevelUp()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -10,28 +10,30 @@ public class LeaderboardLoad : MonoBehaviour {
 	public Text []_name;
 	public Text msg;
 
-	void Start(){
+
+
+	public void Start()
+    {
 		StartCoroutine(scr());
 	}
 
 	IEnumerator scr(){
 		
-		string uri="www.youtube.com";		
-		using (UnityWebRequest webRequest = UnityWebRequest.Get("https://blankseed.000webhostapp.com/RoadRunner/retrive.php"))
+		using (UnityWebRequest webRequest = UnityWebRequest.Get("https://blankseed.000webhostapp.com/RoadRunner/retrive.php?level=level1"))
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            string[] pages = uri.Split('/');
-            int page = pages.Length - 1;
-
-            if (webRequest.isNetworkError)
+         
+            if (webRequest.isNetworkError || webRequest.isHttpError)
             {
-                Debug.Log(pages[page] + ": Error: " + webRequest.error);
+				msg.text = ": Error: " + webRequest.error;
+                Debug.Log( ": Error: " + webRequest.error);
             }
             else
             {
-                Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+				msg.text = ":\nReceived: " + webRequest.downloadHandler.text;
+				Debug.Log( ":\nReceived: " + webRequest.downloadHandler.text);
             }
         }
 		/*

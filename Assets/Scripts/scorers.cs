@@ -28,6 +28,7 @@ public class scorers : MonoBehaviour {
 		form.AddField("score", Int32.Parse(scr.text));
 		form.AddField("level", SceneManager.GetActiveScene().name);
 
+		scr.fontSize = 50;
 
 		using (UnityWebRequest www = UnityWebRequest.Post("https://blankseed.000webhostapp.com/RoadRunner/submit.php", form))
 		{

@@ -317,7 +317,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133370747}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403e9c7f9517a454bb7fce91283418d5, type: 3}
   m_Name: 
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321868609}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403e9c7f9517a454bb7fce91283418d5, type: 3}
   m_Name: 
@@ -2519,6 +2519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game_controller: 0
   pn: {fileID: 1756059101}
+  jump: {fileID: 2005462009}
+  duck: {fileID: 910087168}
 --- !u!4 &1601013857
 Transform:
   m_ObjectHideFlags: 0

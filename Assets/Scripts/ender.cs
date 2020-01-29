@@ -10,6 +10,7 @@ public class ender : MonoBehaviour {
 	//public Rigidbody rb;
 	public int game_controller=0;
 	public GameObject pn;
+	public GameObject jump, duck;
 
 	public void end() {
 		if(game_controller == 0){
@@ -32,6 +33,8 @@ public class ender : MonoBehaviour {
 		Time.fixedDeltaTime = 0.002f;
 
 		pn.SetActive(true);
+		jump.SetActive(false);
+		duck.SetActive(false);
 
 		//SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
 

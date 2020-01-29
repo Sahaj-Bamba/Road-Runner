@@ -9,8 +9,6 @@ public class UIJump : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public float shortJumpMultiplier = 1.5f;
     public Rigidbody rb;
     public Transform tf;
-    private bool ducking = false;
-
     private bool isDown = false;
     
 

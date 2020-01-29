@@ -76,8 +76,8 @@
      <Compile Include="Assets\Scripts\scorers.cs" />
      <Compile Include="Assets\Scripts\spawn.cs" />
      <Compile Include="Assets\Scripts\touchmove.cs" />
-     <Compile Include="Assets\UIDuck.cs" />
-     <Compile Include="Assets\UIJump.cs" />
+     <Compile Include="Assets\Scripts\UIDuck.cs" />
+     <Compile Include="Assets\Scripts\UIJump.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/common/Projects/Own/unity/Road-Runner/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

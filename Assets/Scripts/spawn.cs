@@ -60,7 +60,7 @@ public class spawn : MonoBehaviour {
 
 		int[] idx = { 0, 0, 0, 0, 0 };
 		int[] X = { 0, 0, 0, 0, 0, 0, 0 };
-		for (i = 0; i < gaps; i++)
+		for (int i = 0; i < gaps; i++)
 		{
 			X[Random.Range(0, spawn_points.Length)] = 1;
 		}
@@ -70,7 +70,7 @@ public class spawn : MonoBehaviour {
 		{
 			f = X[i];
 			
-			tp = Random.Range(0, 5);
+			int tp = Random.Range(0, 5);
 			
 			if (f == 1 )
 			{

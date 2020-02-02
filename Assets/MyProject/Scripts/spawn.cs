@@ -12,6 +12,7 @@ public class spawn : MonoBehaviour {
 	private float time_to_wave = 3f;
 	private int gaps=5;
 	public Text scr;
+	public float shootVel = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -31,9 +32,9 @@ public class spawn : MonoBehaviour {
 
 	void spawn_()
 	{
-
 		int temp;
 		int.TryParse(scr.text, out temp);
+		// shootVel += (temp/300.0f);
 		if (temp < 1000)
 		{
 			gaps = 1;
@@ -76,12 +77,14 @@ public class spawn : MonoBehaviour {
 			{
 				if(tp != 0)
                 {
-					Instantiate(block, spawn_points[i].position, Quaternion.identity);
-                }
+					GameObject gb = Instantiate(block, spawn_points[i].position, Quaternion.identity);
+					gb.GetComponent<Rigidbody>().velocity = new Vector3(0,0,-1) * shootVel;
+            	}
                 else
                 {
-					Instantiate(coin, spawn_points[i].position, Quaternion.identity);
-				}
+					GameObject gb = Instantiate(coin, spawn_points[i].position, Quaternion.identity);
+					gb.GetComponent<Rigidbody>().velocity = new Vector3(0,0,-1) * shootVel;
+            	}
 
 			}
 		}

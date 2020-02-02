@@ -900,7 +900,7 @@ MonoBehaviour:
   - {fileID: 293268834}
   block: {fileID: 1044346127981176, guid: 4652a095a79f886418cf8853d8d5218d, type: 3}
   coin: {fileID: 1044346127981176, guid: 955dd802746f42f43b8f912693d9acfd, type: 3}
-  time_to_spawn: 1.5
+  time_to_spawn: 1.7
   time_to_wave: 3
   scr: {fileID: 1049017388}
   specialRate: 10
@@ -1963,8 +1963,8 @@ MonoBehaviour:
   - {fileID: 227009151}
   block: {fileID: 1044346127981176, guid: 4652a095a79f886418cf8853d8d5218d, type: 3}
   coin: {fileID: 1044346127981176, guid: 955dd802746f42f43b8f912693d9acfd, type: 3}
-  time_to_spawn: 1.9
-  time_to_wave: 3
+  time_to_spawn: 1.4
+  time_to_wave: 3.2
   scr: {fileID: 1049017388}
   specialRate: 10
 --- !u!4 &1065229589

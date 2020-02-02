@@ -26,6 +26,7 @@ public class Jump : MonoBehaviour
 		if (tf.localScale.y == 1 && Input.GetButton("Fire1") )
 		{
 			if(rb.velocity.y == 0) {
+				tf.localScale -= Vector3.up * 0.5f * Time.deltaTime * 4;
 				ducking = true;
             }
             else

@@ -66,8 +66,7 @@ public class UIJump : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
         if (rb.velocity.y == 0 && isDown)
         {
-            Debug.Log("Hi");
-            rb.velocity += Vector3.up * upVel;
+           rb.velocity += Vector3.up * upVel;
         }
         else if (rb.velocity.y < 0)
         {

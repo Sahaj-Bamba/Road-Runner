@@ -5,7 +5,7 @@ public class score : MonoBehaviour {
 	public Text scr;
 	//public ender END;
 	public GameObject en_cnt;
-
+	
 	// Update is called once per frame
 	void Update () {
 		

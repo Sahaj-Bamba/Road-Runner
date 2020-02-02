@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 715101909}
   - component: {fileID: 715101908}
   - component: {fileID: 715101912}
+  - component: {fileID: 715101913}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -855,6 +856,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f582914a77eafb34b9a018c20001f6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &715101913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715101907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948886201bcba1e4a950a0e9ee55d205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: {fileID: 1521420859}
+  scr: {fileID: 1273028604}
+  bt: {fileID: 1438276791}
 --- !u!1 &1273028602
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +883,7 @@ GameObject:
   - component: {fileID: 1273028605}
   - component: {fileID: 1273028604}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1114,7 +1130,6 @@ GameObject:
   - component: {fileID: 1438276791}
   - component: {fileID: 1438276790}
   - component: {fileID: 1438276794}
-  - component: {fileID: 1438276795}
   m_Layer: 5
   m_Name: Submit
   m_TagString: Untagged
@@ -1200,7 +1215,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1438276795}
+      - m_Target: {fileID: 715101913}
         m_MethodName: call
         m_Mode: 1
         m_Arguments:
@@ -1266,20 +1281,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1438276795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438276788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3108d0d8ab41d1f4eb39398ec615c5c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: {fileID: 1521420859}
-  scr: {fileID: 0}
 --- !u!1 &1521420857
 GameObject:
   m_ObjectHideFlags: 0

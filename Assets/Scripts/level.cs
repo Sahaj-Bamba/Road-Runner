@@ -6,7 +6,11 @@ public class level : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<obstacle_mov>().frd_force -= Time.timeSinceLevelLoad*1000f;
+		float x = Time.timeSinceLevelLoad*1500f;
+		if (x >= 12500.0f ){
+			x = 12500.0f;
+		}
+		GetComponent<obstacle_mov>().frd_force -= x;
 	}
 	
 	// Update is called once per frame

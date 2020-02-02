@@ -11,11 +11,14 @@ public class scorers : MonoBehaviour {
 
 	public InputField name;
 	public Text scr;
+	public Button bt;
 
+	void Start() {
+		scr.text = PlayerPrefs.GetString("Score", "");	
+	}
 
 	public void call(){
-		gameObject.GetComponent<Button>().interactable = false;
-
+		bt.interactable = false;
 		StartCoroutine(scre());
 	}
 
@@ -26,7 +29,7 @@ public class scorers : MonoBehaviour {
 
 		form.AddField("name",name.text);
 		form.AddField("score", Int32.Parse(scr.text));
-		form.AddField("level", SceneManager.GetActiveScene().name);
+		form.AddField("level", PlayerPrefs.GetString("level", "level1"));
 
 		scr.fontSize = 50;
 
@@ -45,20 +48,6 @@ public class scorers : MonoBehaviour {
 				Debug.Log("Form upload complete!");
 			}
 		}
-
-		/*
-		WWW w = new WWW ("https://ltss.000webhostapp.com/unity/submit.php",form);
-
-		yield return w;	
-
-		if(w.text == "0"){
-			Debug.Log("Connection error");
-		}
-		else{
-			Debug.Log("Your score has been successfully saved in the imperial scroll of honour");
-			scr.fontSize = 50;
-			scr.text="Your score has been successfully saved\nin the imperial scroll of honour";
-		}*/
 
 	}
 }

@@ -8,17 +8,12 @@ public class spawn : MonoBehaviour {
 	public Transform[] spawn_points;
 	public GameObject block;
 	public GameObject coin;
-	private float time_to_spawn = 1.5f;
-	private float time_to_wave = 3f;
+	public float time_to_spawn = 1.5f;
+	public float time_to_wave = 3f;
 	private int gaps=5;
 	public Text scr;
+	public int specialRate;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 		
 		if(Time.time>=time_to_spawn){
@@ -70,7 +65,7 @@ public class spawn : MonoBehaviour {
 		{
 			f = X[i];
 			
-			int tp = Random.Range(0, 5);
+			int tp = Random.Range(0, specialRate);
 			
 			if (f == 1 )
 			{

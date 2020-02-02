@@ -3,25 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ender : MonoBehaviour {
 
 	private float slow_fac = 50f;
-	//public Rigidbody rb;
 	public int game_controller=0;
-	public GameObject pn;
-	public GameObject jump, duck;
+	public Text score;
 
 	public void end() {
 		if(game_controller == 0){
+			PlayerPrefs.SetString("Score", score.text);
 			StartCoroutine(Restart());
 		}
 		
 	}
 
 	IEnumerator Restart(){
-
-		//Debug.Log("Restart");
 
 		game_controller = 1;
 		Time.timeScale = 1f/slow_fac;
@@ -32,13 +30,9 @@ public class ender : MonoBehaviour {
 		Time.timeScale = 1f;
 		Time.fixedDeltaTime = 0.002f;
 
-		pn.SetActive(true);
-		jump.SetActive(false);
-		duck.SetActive(false);
-
-		//SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex);
-
-		//Debug.Log(Time.fixedDeltaTime);
+		
+	 	Debug.Log("Ender");
+		SceneManager.LoadScene("End");
 
 	}
 }

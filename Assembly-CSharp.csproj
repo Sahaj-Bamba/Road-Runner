@@ -55,29 +55,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\acc_mob.cs" />
-     <Compile Include="Assets\Scripts\ender.cs" />
-     <Compile Include="Assets\Scripts\final_score.cs" />
-     <Compile Include="Assets\Scripts\GameVars.cs" />
-     <Compile Include="Assets\Scripts\GyroMotion.cs" />
-     <Compile Include="Assets\Scripts\Jump.cs" />
-     <Compile Include="Assets\Scripts\ld.cs" />
-     <Compile Include="Assets\Scripts\leaderboard.cs" />
-     <Compile Include="Assets\Scripts\LeaderboardLoad.cs" />
-     <Compile Include="Assets\Scripts\level.cs" />
-     <Compile Include="Assets\Scripts\LevelSelector.cs" />
-     <Compile Include="Assets\Scripts\Menu.cs" />
-     <Compile Include="Assets\Scripts\obstacle_mov.cs" />
-     <Compile Include="Assets\Scripts\on.cs" />
-     <Compile Include="Assets\Scripts\PageSwiper.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\SaveScore.cs" />
-     <Compile Include="Assets\Scripts\score.cs" />
-     <Compile Include="Assets\Scripts\scorers.cs" />
-     <Compile Include="Assets\Scripts\spawn.cs" />
-     <Compile Include="Assets\Scripts\touchmove.cs" />
-     <Compile Include="Assets\Scripts\UIDuck.cs" />
-     <Compile Include="Assets\Scripts\UIJump.cs" />
+     <Compile Include="Assets\MyProject\Scripts\acc_mob.cs" />
+     <Compile Include="Assets\MyProject\Scripts\ender.cs" />
+     <Compile Include="Assets\MyProject\Scripts\final_score.cs" />
+     <Compile Include="Assets\MyProject\Scripts\GameVars.cs" />
+     <Compile Include="Assets\MyProject\Scripts\GyroMotion.cs" />
+     <Compile Include="Assets\MyProject\Scripts\Jump.cs" />
+     <Compile Include="Assets\MyProject\Scripts\ld.cs" />
+     <Compile Include="Assets\MyProject\Scripts\leaderboard.cs" />
+     <Compile Include="Assets\MyProject\Scripts\LeaderboardLoad.cs" />
+     <Compile Include="Assets\MyProject\Scripts\level.cs" />
+     <Compile Include="Assets\MyProject\Scripts\LevelSelector.cs" />
+     <Compile Include="Assets\MyProject\Scripts\Menu.cs" />
+     <Compile Include="Assets\MyProject\Scripts\obstacle_mov.cs" />
+     <Compile Include="Assets\MyProject\Scripts\on.cs" />
+     <Compile Include="Assets\MyProject\Scripts\PageSwiper.cs" />
+     <Compile Include="Assets\MyProject\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\MyProject\Scripts\SaveScore.cs" />
+     <Compile Include="Assets\MyProject\Scripts\score.cs" />
+     <Compile Include="Assets\MyProject\Scripts\scorers.cs" />
+     <Compile Include="Assets\MyProject\Scripts\spawn.cs" />
+     <Compile Include="Assets\MyProject\Scripts\touchmove.cs" />
+     <Compile Include="Assets\MyProject\Scripts\UIDuck.cs" />
+     <Compile Include="Assets\MyProject\Scripts\UIJump.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/common/Projects/Own/unity/Road-Runner/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

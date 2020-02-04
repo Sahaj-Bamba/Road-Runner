@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\acc_mob.cs" />
      <Compile Include="Assets\Scripts\ender.cs" />
+     <Compile Include="Assets\Scripts\FeedBackSubmit.cs" />
      <Compile Include="Assets\Scripts\final_score.cs" />
      <Compile Include="Assets\Scripts\GameVars.cs" />
      <Compile Include="Assets\Scripts\GyroMotion.cs" />

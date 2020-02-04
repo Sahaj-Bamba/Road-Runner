@@ -31,7 +31,9 @@ public class scorers : MonoBehaviour {
 		form.AddField("score", Int32.Parse(scr.text));
 		form.AddField("level", PlayerPrefs.GetString("level", "level1"));
 
-		scr.fontSize = 50;
+		scr.fontSize = 40;
+
+		src.text = "Please wait for a moment while we are searching the imperial scroll of honour.";
 
 		using (UnityWebRequest www = UnityWebRequest.Post("https://blankseed.000webhostapp.com/RoadRunner/submit.php", form))
 		{
@@ -39,7 +41,7 @@ public class scorers : MonoBehaviour {
 
 			if (www.isNetworkError || www.isHttpError)
 			{
-				scr.text = www.error;
+				scr.text = "Sorry but it appears you have improper connection. Please Try again Latter.";
 				Debug.Log("Our Server is currently having some problems. Please Try again Latter.");
 			}
 			else

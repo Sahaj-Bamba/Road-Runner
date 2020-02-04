@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\SaveScore.cs" />
      <Compile Include="Assets\Scripts\score.cs" />
      <Compile Include="Assets\Scripts\scorers.cs" />
+     <Compile Include="Assets\Scripts\ShopSelector.cs" />
      <Compile Include="Assets\Scripts\spawn.cs" />
      <Compile Include="Assets\Scripts\touchmove.cs" />
      <Compile Include="Assets\Scripts\UIDuck.cs" />

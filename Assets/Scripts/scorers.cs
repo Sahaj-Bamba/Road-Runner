@@ -44,7 +44,7 @@ public class scorers : MonoBehaviour {
 			}
 			else
 			{
-				scr.text = "Your score has been successfully saved\nin the imperial scroll of honour";
+				scr.text = "Your score of level "+PlayerPrefs.GetString("level", "level1")+" has been successfully saved\nin the imperial scroll of honour";
 				Debug.Log("Form upload complete!");
 			}
 		}

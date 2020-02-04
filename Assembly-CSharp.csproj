@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\acc_mob.cs" />
      <Compile Include="Assets\Scripts\ender.cs" />
      <Compile Include="Assets\Scripts\final_score.cs" />
@@ -71,6 +70,7 @@
      <Compile Include="Assets\Scripts\obstacle_mov.cs" />
      <Compile Include="Assets\Scripts\on.cs" />
      <Compile Include="Assets\Scripts\PageSwiper.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SaveScore.cs" />
      <Compile Include="Assets\Scripts\score.cs" />

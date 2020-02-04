@@ -70,12 +70,9 @@ public class LevelSelector : MonoBehaviour
 
     void load(string x)
     {
+        PlayerPrefs.SetString("level", x);
         SceneManager.LoadScene(x);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 }

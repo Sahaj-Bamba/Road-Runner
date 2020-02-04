@@ -37,6 +37,11 @@ public class LeaderboardLoad : MonoBehaviour {
 		
 		using (UnityWebRequest webRequest = UnityWebRequest.Get("https://blankseed.000webhostapp.com/RoadRunner/retrive.php?level=level"+currentLevel))
         {
+
+			
+			msg.text = ": Loading: level"+currentLevel ;
+                
+
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 

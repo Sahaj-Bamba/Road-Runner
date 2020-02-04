@@ -33,7 +33,7 @@ public class scorers : MonoBehaviour {
 
 		scr.fontSize = 40;
 
-		src.text = "Please wait for a moment while we are searching the imperial scroll of honour.";
+		scr.text = "Please wait for a moment while we are searching the imperial scroll of honour.";
 
 		using (UnityWebRequest www = UnityWebRequest.Post("https://blankseed.000webhostapp.com/RoadRunner/submit.php", form))
 		{

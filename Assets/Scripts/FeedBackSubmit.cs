@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class FeedBackSubmit : MonoBehaviour
 {
@@ -35,7 +37,7 @@ public class FeedBackSubmit : MonoBehaviour
 			}
 			else
 			{
-				scr.text = "Your golden words have been successfully saved \n in the imperial scroll of wisdom and we will look into them.";
+				content.text = "Your golden words have been successfully saved \n in the imperial scroll of wisdom and we will look into them.";
 				Debug.Log("Form upload complete!");
 			}
 		}

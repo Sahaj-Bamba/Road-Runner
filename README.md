@@ -26,4 +26,3 @@ Polishing
 Different Arenas and stages
 
 
-## Getting lots of problems in upgrading to newer unity version. So can't continue this . Moving to unity V 2019.2.18f in Road-Runner V2

@@ -867,6 +867,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d824ec410aaba8f429cf604c14d6cef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: {fileID: 1521420859}
+  content: {fileID: 1512178275}
+  bt: {fileID: 1438276791}
 --- !u!1 &1326151075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1214,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 715101913}
         m_MethodName: call
         m_Mode: 1
         m_Arguments:

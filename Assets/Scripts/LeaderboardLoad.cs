@@ -54,6 +54,10 @@ public class LeaderboardLoad : MonoBehaviour {
             else
             {
 				msg.text = "";
+				for(int i=0;i<5;i++){
+					_score[i].text = "";
+					_name[i].text = "";
+				}
 				// msg.text = ":\nReceived: " + webRequest.downloadHandler.text;
 				// Debug.Log( ":\nReceived: " + webRequest.downloadHandler.text);
 				string []res = webRequest.downloadHandler.text.Split('+');

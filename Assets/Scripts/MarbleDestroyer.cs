@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MarbleDestroyer : MonoBehaviour
 {
-    public float leaveTime = 5f;
+    public float leaveTime = 15f;
 
     void Start()
     {
@@ -19,4 +19,14 @@ public class MarbleDestroyer : MonoBehaviour
 
     }
 
+
+    void OnCollisionEnter(Collision col){
+        
+        if (col.gameObject.tag == "barrier" || col.gameObject.tag == "bonus")
+        {
+            col.gameObject.GetComponent<Transform>().localScale = new Vector3(0,0,0);
+            Destroy(col.gameObject);
+        }
+
+    }
 }
